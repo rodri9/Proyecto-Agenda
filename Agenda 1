@@ -1,8 +1,58 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+struct persona
+{
+    char nombre [100];
+    char apellidos [100];
+    char edad [10];
+    char telcel[50];
+    int telcasa;
+    char teltra[50];
+    char correo [100];
+    char direccion[150];
+};
+
 int main()
 {
-  
-  return 0;
+    struct persona le;
+
+    printf("Inserta nombre.");
+    printf("\n");
+    getchar ();
+    scanf("%[^\n]", le.nombre);
+    printf("Inserta apellidos.");
+    printf("\n");
+    getchar();
+    scanf("%[^\n]", le.apellidos);
+    printf("Inserta edad.");
+    printf("\n");
+    getchar ();
+    scanf("%[^\n]", le.edad);
+    printf("Inserta numero de telefono celular.");
+    printf("\n");
+    getchar();
+    scanf("%[^\n]", le.telcel);
+    printf("Inserta numero telefonico de casa.");
+    printf("\n");
+    scanf("%i", &le.telcasa);
+    printf("Inserta numero telefonico de trabajo.");
+    printf("\n");
+    getchar();
+    scanf("%[^\n]", le.teltra);
+    printf("Inserta correo.");
+    printf("\n");
+    getchar();
+    scanf("%[^\n]", le.correo);
+    printf("Inserta direccion.");
+    printf("\n");
+    getchar();
+    scanf("%[^\n]", le.direccion);
+    printf("\n");
+   printf("Presiona ENTER para guardar");
+   getchar();
+    getchar();
+
+
+
 }
